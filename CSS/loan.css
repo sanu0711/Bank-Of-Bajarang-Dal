@@ -1,0 +1,84 @@
+.gridd{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    /* background-color: orange; */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+
+}
+#cent{
+    text-align: center;
+}
+.hw{
+    width:250px;
+    height: 200px;
+}
+
+.loan-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 30%; */
+    /* margin: 20px; */
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.loan-section h2 {
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .loan-section {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+
+
+.btn {
+    background-color: orange;
+    border-radius: 15px;
+    font-family: Georgia;
+    font-size: 19px;
+    padding: 5px;
+    text-decoration: none;
+
+  } 
+  
+   .btn:hover {
+    background: rgb(157, 142, 115);
+  } 
+  .space{
+    text-align: center;
+    height: 50px;
+  }
+
+  .gradt {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	/* height: 100vh; */
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.copy{
+    font-size: 10px;
+    margin: 50px auto;
+    width: 280px;
+  }
