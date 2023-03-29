@@ -44,3 +44,11 @@ hr.dot {
       transform: scale(1.1);
     }
 }
+@media(max-width:600px){
+  .grid1 , .grid2{
+      display: block;
+      width: 100%;
+  }
+
+
+}
