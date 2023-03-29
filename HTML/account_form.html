@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Online</title>
+    <link rel="icon" type="image/x-icon" href="../LOGO/BBD1 - Edited - Edited.png">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/loan_form.css">
+</head>
+<body>
+    <div include-html="navigation.html" id="navig"></div>
+    <script src="../JS/include-html.min.js"></script> 
+    <script src="../JS/home.js"></script>
+    <script src="../JS/navigation.js"></script>
+
+    <div class="formm">
+        
+            <header>
+              <h1><img src="../LOGO/BBD1 - Edited - Edited.png" alt="logo" width="100px" style="vertical-align: middle;">Account Application Form</h1>
+            </header>
+            
+            <div class="form">
+        
+              <fieldset id="name" class="form">
+                <legend>Your Information</legend>
+                <input type="text" required id="firstName" name="user_first_name" placeholder="First Name">
+                <input type="text" id="middleInitial" name="user_middle_initial" placeholder="middle name" size=9>
+                <input type="text" id="lastName" name="user_last_name" placeholder="Last Name">
+                <p>
+                <input type="text" id="address" name="homeAddress" placeholder="Current Home Address" size=40>
+                <input type="text" id="address2" name="homeAddress2" placeholder="City, State ZIP" size=40>
+                </p>
+              </fieldset>
+
+              <fieldset id="loanLength" class="form">
+                <legend>Occupation</legend> 
+                <input type="radio" name="radio"> <label for="radio">Student</label>
+                <input type="radio" name="radio"> <label for="radio">Govenment Job</label>
+                <input type="radio" name="radio"> <label for="radio">Business</label>
+              </fieldset>  
+        
+              <fieldset id="employer" class="form">
+                <legend>Employer Information</legend>
+                <input type="text" id="occupation" name="occupation" placeholder="Occupation">
+                <p>
+                <input type="text" id="employer" name="employer" placeholder="Employer">
+                <input type="text" id="workAddress" name="workAddress" placeholder="Work Address" size=40>
+                <input type="text" id="workaddress2" name="workAddress2" placeholder="City, State ZIP" size=40>
+                </p>
+              </fieldset>
+        
+        
+              <fieldset id="loanInfo" class="form">
+                <legend>Account Information</legend> 
+                <label for="Type of Loan">Account Type:</label>
+                  <select name="loanType" id="loanType">
+                    <option value="Saving">Saving</option>
+                    <option value="Current">Current</option>
+                    
+                  </select>
+                <label for="amount">Deposit Amount: </label>
+                <input type="number" name="amount" id="amount" value="500" placeholder="100000" step="100" />
+              </fieldset>
+        
+              <fieldset id="loanLength" class="form">
+                <legend>Debit Card</legend> 
+                <input type="radio" name="radio"> <label for="radio">Rupay</label>
+                <input type="radio" name="radio"> <label for="radio">Visa</label>
+                <input type="radio" name="radio"> <label for="radio">MasterCard</label>
+              </fieldset>  
+              
+              <fieldset id="loanLength" class="form">
+                <legend>Gender</legend> 
+                <input type="radio" name="radio"> <label for="radio">Male</label>
+                <input type="radio" name="radio"> <label for="radio">Female</label>
+                <input type="radio" name="radio"> <label for="radio">Other</label>
+              </fieldset> 
+              
+              <fieldset id="loanLength" class="form">
+                <legend>are you?</legend> 
+                <input type="radio" name="radio"> <label for="radio">Married</label>
+                <input type="radio" name="radio"> <label for="radio">Unmarried</label>
+              </fieldset>  
+        
+              <fieldset id="loanLength" class="form">
+                <legend>Notification</legend> 
+                <input type="checkbox" name="downpmt"> <label for="checkbox">Email</label>
+                <input type="checkbox" name="outofstate"> <label for="checkbox">SMS</label>
+              </fieldset>     
+        
+              <fieldset id="contact-form" action="index.html" method="post">
+                <legend>Contact Information</legend>
+                <ul>
+                    <li>
+                        <label for="aadhar">Aadhar No.</label>
+                        <input type="number" placeholder="xxxx xxxx xxxx">
+                    </li>
+                    <li>
+                        <label for="pan">PAN-card No.</label>
+                        <input type="number" placeholder="ABCDE1234F">
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" value="" placeholder="you@youremail.com" size=40 required>
+                    </li> 
+                    
+
+                    <li>
+                        <label for="phonenum">Phone:</label>
+                        <input type="tel" id="phone" value="" 
+                        placeholder="6151234567" 
+                        pattern="\d{10}"
+                        size=40 required> 
+                    </li>   
+                    
+                </ul>
+              </fieldset>
+             
+              <div class="but">
+                <button class="btn">Open Account</button>
+        
+            </div>
+        
+            </div>
+            <footer>
+      
+        
+    </div>
+    <p class="copy">Copyright 2023 © Bank of Bajarang Dal . All Rights Reserved.</p>
+
+    
+</body>
+</html>

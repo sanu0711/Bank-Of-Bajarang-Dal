@@ -1,0 +1,27 @@
+
+#cont{
+    padding-top: 70px;
+    padding-left: 30px;
+}
+  .copy{
+    font-size: 10px;
+    margin: 50px auto;
+    width: 280px;
+  }
+  .btn {
+    background-color: orange;
+    border-radius: 15px;
+    font-family: Georgia;
+    font-size: 19px;
+    padding: 5px;
+    text-decoration: none;
+
+  } 
+  
+   .btn:hover {
+    background: rgb(157, 142, 115);
+  } 
+  .but{
+    padding: 50px;
+    text-align: center;
+  }

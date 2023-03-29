@@ -1,0 +1,51 @@
+.grid1{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 70px;
+    float: inline-end;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 70px;
+    float:right;
+}
+hr.dot {
+    border: dotted #bb8a2f 5px;
+    border-bottom: none;
+    width: 5%;
+}
+.bottom{
+    text-align: left;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.copy{
+    font-size: 10px;
+    margin: 50px auto;
+    width: 280px;
+  }
+  
+
+.intro:hover{
+  animation-name: sizehow;
+  animation-duration: 1s;
+}
+@keyframes sizehow {
+    from{
+      transform: scale(1);
+    }
+    to{
+      transform: scale(1.1);
+    }
+}
+
+@media(max-width:600px){
+  .grid1 , .grid2{
+      display: block;
+      width: 100%;
+  }
+
+
+}
