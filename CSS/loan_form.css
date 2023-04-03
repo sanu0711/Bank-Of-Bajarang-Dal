@@ -4,7 +4,7 @@ body {
 	color: #111;
 }
 .formm{
-  padding: 70px;
+  padding-top: 70px;
 }
 
 input[type="tel"]:valid {

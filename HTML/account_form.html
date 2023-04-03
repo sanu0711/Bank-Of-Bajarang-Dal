@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="../LOGO/BBD1 - Edited - Edited.png">
     <script src="../JS/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="../CSS/home.css">
-    <link rel="stylesheet" href="../CSS/loan_form.css">
+    <link rel="stylesheet" href="../CSS/account_form.css">
 </head>
 <body>
     <div include-html="navigation.html" id="navig"></div>
@@ -28,7 +28,8 @@
                 <legend>Your Information</legend>
                 <input type="text" required id="firstName" name="user_first_name" placeholder="First Name">
                 <input type="text" id="middleInitial" name="user_middle_initial" placeholder="middle name" size=9>
-                <input type="text" id="lastName" name="user_last_name" placeholder="Last Name">
+                <input type="text" id="lastName" name="user_last_name" placeholder="Last Name"><br>
+                <input class="image" type="file" onchange="readURL(this)" accept="image/*" title="Upload passport size Image " required>
                 <p>
                 <input type="text" id="address" name="homeAddress" placeholder="Current Home Address" size=40>
                 <input type="text" id="address2" name="homeAddress2" placeholder="City, State ZIP" size=40>
@@ -53,7 +54,7 @@
               </fieldset>
         
         
-              <fieldset id="loanInfo" class="form">
+              <fieldset id="acountform" class="form">
                 <legend>Account Information</legend> 
                 <label for="Type of Loan">Account Type:</label>
                   <select name="loanType" id="loanType">
@@ -65,30 +66,30 @@
                 <input type="number" name="amount" id="amount" value="500" placeholder="100000" step="100" />
               </fieldset>
         
-              <fieldset id="loanLength" class="form">
+              <fieldset id="Debit">
                 <legend>Debit Card</legend> 
-                <input type="radio" name="radio"> <label for="radio">Rupay</label>
-                <input type="radio" name="radio"> <label for="radio">Visa</label>
-                <input type="radio" name="radio"> <label for="radio">MasterCard</label>
+                <input type="radio" name="radio1"> <label for="radio1">Rupay</label>
+                <input type="radio" name="radio1"> <label for="radio1">Visa</label>
+                <input type="radio" name="radio1"> <label for="radio1">MasterCard</label>
               </fieldset>  
               
-              <fieldset id="loanLength" class="form">
+              <fieldset id="Gender">
                 <legend>Gender</legend> 
-                <input type="radio" name="radio"> <label for="radio">Male</label>
-                <input type="radio" name="radio"> <label for="radio">Female</label>
-                <input type="radio" name="radio"> <label for="radio">Other</label>
+                <input type="radio" name="radio2"> <label for="radio2">Male</label>
+                <input type="radio" name="radio2"> <label for="radio2">Female</label>
+                <input type="radio" name="radio2"> <label for="radio2">Other</label>
               </fieldset> 
               
-              <fieldset id="loanLength" class="form">
+              <fieldset id="mf" >
                 <legend>are you?</legend> 
-                <input type="radio" name="radio"> <label for="radio">Married</label>
-                <input type="radio" name="radio"> <label for="radio">Unmarried</label>
+                <input type="radio" name="radio3"> <label for="radio3">Married</label>
+                <input type="radio" name="radio3"> <label for="radio3">Unmarried</label>
               </fieldset>  
         
-              <fieldset id="loanLength" class="form">
+              <fieldset id="Notification">
                 <legend>Notification</legend> 
-                <input type="checkbox" name="downpmt"> <label for="checkbox">Email</label>
-                <input type="checkbox" name="outofstate"> <label for="checkbox">SMS</label>
+                <input type="checkbox"> <label for="checkbox">Email</label>
+                <input type="checkbox"> <label for="checkbox">SMS</label>
               </fieldset>     
         
               <fieldset id="contact-form" action="index.html" method="post">
@@ -96,15 +97,15 @@
                 <ul>
                     <li>
                         <label for="aadhar">Aadhar No.</label>
-                        <input type="number" placeholder="xxxx xxxx xxxx">
+                        <input type="text" placeholder="xxxx xxxx xxxx" required>
                     </li>
                     <li>
                         <label for="pan">PAN-card No.</label>
-                        <input type="number" placeholder="ABCDE1234F">
+                        <input type="text" placeholder="ABCDE1234F" required>
                     </li>
                     <li>
                         <label for="email">Email:</label>
-                        <input type="text" name="email" id="email" value="" placeholder="you@youremail.com" size=40 required>
+                        <input type="text" name="email" id="email" value="" placeholder="you@youremail.com" required>
                     </li> 
                     
 
@@ -113,7 +114,7 @@
                         <input type="tel" id="phone" value="" 
                         placeholder="6151234567" 
                         pattern="\d{10}"
-                        size=40 required> 
+                        required> 
                     </li>   
                     
                 </ul>
