@@ -25,7 +25,7 @@
                 <input type="text" placeholder="UserID"><br><br>
                 <!-- <label for="password">Password</label><br> -->
                 <input type="password" placeholder="password"><br><br>
-                <button>Login</button><br>
+                <button  onclick="loggg()">Login</button><br>
             </div>
                 
 
@@ -33,6 +33,22 @@
         </div>
 
     </div>
+    <script>
+        loggg=function(){
+            var id = document.querySelector("input[type='text']").value;
+            var pwd = document.querySelector("input[type='password']").value;
+    
+            if(id === "sanu" && pwd === "sanu") {
+                window.location.href = "login.html";
+            } else {
+                alert("Invalid user ID or password.");
+            }
+        }
+    </script>
+    
+
+   
+
     
 
     

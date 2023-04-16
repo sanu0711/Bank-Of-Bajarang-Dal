@@ -92,16 +92,16 @@
                 <input type="checkbox"> <label for="checkbox">SMS</label>
               </fieldset>     
         
-              <fieldset id="contact-form" action="index.html" method="post">
+              <fieldset id="contact-form" action="account_from.php" method="post">
                 <legend>Contact Information</legend>
                 <ul>
                     <li>
                         <label for="aadhar">Aadhar No.</label>
-                        <input type="text" placeholder="xxxx xxxx xxxx" required>
+                        <input id="aadhar" type="text" placeholder="xxxx xxxx xxxx" required>
                     </li>
                     <li>
                         <label for="pan">PAN-card No.</label>
-                        <input type="text" placeholder="ABCDE1234F" required>
+                        <input id="pan" type="text" placeholder="ABCDE1234F" required>
                     </li>
                     <li>
                         <label for="email">Email:</label>
@@ -116,7 +116,9 @@
                         pattern="\d{10}"
                         required> 
                     </li>   
-                    
+                    <li>
+                      <input type="submit" id="submit" value="Submit">
+                    </li>
                 </ul>
               </fieldset>
              
